@@ -10,7 +10,7 @@ class ProductBloc extends Bloc<Events, States> {
     on<ChangeModel>((event, emit) {
       try {
         String model = event.model;
-        log("Change Model :: ${event.model}");
+        log("Change Models :: ${event.model}");
         emit(ChangeModelSuccessState(model: model));
         emit(InitialState());
       } catch (e) {
